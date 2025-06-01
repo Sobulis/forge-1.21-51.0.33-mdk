@@ -4,5 +4,12 @@
   "item.tutorialmod.zephryte": "Zephryte Shard",
   "item.tutorialmod.raw_zephryte": "Raw Zephryte",
   "item.tutorialmod.embernite": "Embernite Gem",
-  "item.tutorialmod.raw_embernite": "Raw Embernite"
+  "item.tutorialmod.raw_embernite": "Raw Embernite",
+
+  "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
+  "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
+  "block.tutorialmod.zephryte_block": "Block of Zephryte",
+  "block.tutorialmod.raw_zephryte_block": "Block of Raw Zephryte",
+  "block.tutorialmod.embernite_block": "Block of Embernite",
+  "block.tutorialmod.raw_embernite_block": "Block of Raw Embernite"
 }

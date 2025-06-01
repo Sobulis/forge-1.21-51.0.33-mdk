@@ -1,5 +1,6 @@
 package com.fideguard.tutorialmod;
 
+import com.fideguard.tutorialmod.block.ModBlocks;
 import com.fideguard.tutorialmod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -15,6 +16,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.checkerframework.checker.units.qual.C;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -32,7 +34,9 @@ public class TutorialMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        //Call the items and blocks
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -52,6 +56,15 @@ public class TutorialMod {
             event.accept(ModItems.RAW_ZEPHRYTE);
             event.accept(ModItems.EMBERNITE);
             event.accept(ModItems.RAW_EMBERNITE);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.ALEXANDRITE_BLOCK);
+            event.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK);
+            event.accept(ModBlocks.ZEPHRYTE_BLOCK);
+            event.accept(ModBlocks.RAW_ZEPHRYTE_BLOCK);
+            event.accept(ModBlocks.EMBERNITE_BLOCK);
+            event.accept(ModBlocks.RAW_EMBERNITE_BLOCK);
         }
     }
 
