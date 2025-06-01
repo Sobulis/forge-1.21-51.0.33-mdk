@@ -11,5 +11,8 @@
   "block.tutorialmod.zephryte_block": "Block of Zephryte",
   "block.tutorialmod.raw_zephryte_block": "Block of Raw Zephryte",
   "block.tutorialmod.embernite_block": "Block of Embernite",
-  "block.tutorialmod.raw_embernite_block": "Block of Raw Embernite"
+  "block.tutorialmod.raw_embernite_block": "Block of Raw Embernite",
+
+  "creativetab.tutorialmod.perfective_items": "Perfective Items",
+  "creativetab.tutorialmod.perfective_blocks": "Perfective Blocks"
 }

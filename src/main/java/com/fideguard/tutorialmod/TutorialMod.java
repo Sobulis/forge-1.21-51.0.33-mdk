@@ -1,6 +1,7 @@
 package com.fideguard.tutorialmod;
 
 import com.fideguard.tutorialmod.block.ModBlocks;
+import com.fideguard.tutorialmod.item.ModCreativeModeTabs;
 import com.fideguard.tutorialmod.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -33,6 +34,9 @@ public class TutorialMod {
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        //Call the creative mode tab
+        ModCreativeModeTabs.register(modEventBus);
 
         //Call the items and blocks
         ModItems.register(modEventBus);

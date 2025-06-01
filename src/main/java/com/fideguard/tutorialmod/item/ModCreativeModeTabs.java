@@ -1,0 +1,51 @@
+package com.fideguard.tutorialmod.item;
+
+import com.fideguard.tutorialmod.TutorialMod;
+import com.fideguard.tutorialmod.block.ModBlocks;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
+
+public class ModCreativeModeTabs {
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TutorialMod.MOD_ID);
+
+    public static final RegistryObject<CreativeModeTab> PERFECTIVE_ITEMS_TAB = CREATIVE_MODE_TABS.register("perfective_items_tabs",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.ALEXANDRITE.get()))
+                    .title(Component.translatable("creativetab.tutorialmod.perfective_items"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.ALEXANDRITE.get());
+                        output.accept(ModItems.RAW_ALEXANDRITE.get());
+                        output.accept(ModItems.RAW_ZEPHRYTE.get());
+                        output.accept(ModItems.ZEPHRYTE.get());
+                        output.accept(ModItems.EMBERNITE.get());
+                        output.accept(ModItems.RAW_EMBERNITE.get());
+                    }).build());
+
+    public static final RegistryObject<CreativeModeTab> PERFECTIVE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("perfective_blocks_tabs",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.ALEXANDRITE_BLOCK.get()))
+                    .withTabsBefore(PERFECTIVE_ITEMS_TAB.getId()) //Define tabs that should come before this tab. This tab will be placed after the tabs.
+                    .title(Component.translatable("creativetab.tutorialmod.perfective_blocks"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModBlocks.ALEXANDRITE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_ALEXANDRITE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_ZEPHRYTE_BLOCK.get());
+                        output.accept(ModBlocks.ZEPHRYTE_BLOCK.get());
+                        output.accept(ModBlocks.EMBERNITE_BLOCK.get());
+                        output.accept(ModBlocks.RAW_EMBERNITE_BLOCK.get());
+
+                    }).build());
+
+
+
+
+    public static void register(IEventBus eventBus){
+        CREATIVE_MODE_TABS.register(eventBus);
+    }
+}
