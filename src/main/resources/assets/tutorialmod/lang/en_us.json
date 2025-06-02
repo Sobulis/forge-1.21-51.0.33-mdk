@@ -13,6 +13,13 @@
   "block.tutorialmod.embernite_block": "Block of Embernite",
   "block.tutorialmod.raw_embernite_block": "Block of Raw Embernite",
 
+  "block.tutorialmod.alexandrite_ore": "Alexandrite Ore",
+  "block.tutorialmod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
+  "block.tutorialmod.embernite_ore": "Embernite Ore",
+  "block.tutorialmod.embernite_deepslate_ore": "Embernite Deepslate Ore",
+  "block.tutorialmod.zephryte_ore": "Zephryte Ore",
+  "block.tutorialmod.zephryte_deepslate_ore": "Zephryte Deepslate Ore",
+
   "creativetab.tutorialmod.perfective_items": "Perfective Items",
   "creativetab.tutorialmod.perfective_blocks": "Perfective Blocks"
 }

@@ -69,6 +69,7 @@ public class TutorialMod {
             event.accept(ModBlocks.RAW_ZEPHRYTE_BLOCK);
             event.accept(ModBlocks.EMBERNITE_BLOCK);
             event.accept(ModBlocks.RAW_EMBERNITE_BLOCK);
+
         }
     }
 

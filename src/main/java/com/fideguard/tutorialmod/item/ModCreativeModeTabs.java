@@ -40,6 +40,13 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.EMBERNITE_BLOCK.get());
                         output.accept(ModBlocks.RAW_EMBERNITE_BLOCK.get());
 
+                        output.accept(ModBlocks.ALEXANDRITE_ORE.get());
+                        output.accept(ModBlocks.ALEXANDRITE_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.EMBERNITE_ORE.get());
+                        output.accept(ModBlocks.EMBERNITE_DEEPSLATE_ORE.get());
+                        output.accept(ModBlocks.ZEPHRYTE_ORE.get());
+                        output.accept(ModBlocks.ZEPHRYTE_DEEPSLATE_ORE.get());
+
                     }).build());
 
 

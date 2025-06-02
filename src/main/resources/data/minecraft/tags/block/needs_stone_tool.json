@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:embernite_ore",
+    "tutorialmod:zephryte_block",
+    "tutorialmod:raw_zephryte_block"
+  ]
+}
