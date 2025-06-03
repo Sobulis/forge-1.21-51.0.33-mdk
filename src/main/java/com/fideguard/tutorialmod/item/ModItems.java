@@ -1,6 +1,8 @@
 package com.fideguard.tutorialmod.item;
 
 import com.fideguard.tutorialmod.TutorialMod;
+import com.fideguard.tutorialmod.item.custom.ChiselItem;
+import com.fideguard.tutorialmod.item.custom.SmeltItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.internal.ForgeBindings;
@@ -22,6 +24,9 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_ZEPHRYTE = ITEMS.register("raw_zephryte", () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> EMBERNITE = ITEMS.register("embernite",() -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_EMBERNITE = ITEMS.register("raw_embernite", () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel", () -> new ChiselItem(new Item.Properties().durability(32)));
+    public static final RegistryObject<Item> SMELT_TORCH = ITEMS.register("smelt_torch", () -> new SmeltItem(new Item.Properties().durability(16)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

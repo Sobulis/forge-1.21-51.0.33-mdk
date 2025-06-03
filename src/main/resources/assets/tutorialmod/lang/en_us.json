@@ -21,5 +21,8 @@
   "block.tutorialmod.zephryte_deepslate_ore": "Zephryte Deepslate Ore",
 
   "creativetab.tutorialmod.perfective_items": "Perfective Items",
-  "creativetab.tutorialmod.perfective_blocks": "Perfective Blocks"
+  "creativetab.tutorialmod.perfective_blocks": "Perfective Blocks",
+
+  "item.tutorialmod.chisel": "Chisel",
+  "item.tutorialmod.smelt_torch": "Smelt Torch"
 }

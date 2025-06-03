@@ -25,6 +25,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ZEPHRYTE.get());
                         output.accept(ModItems.EMBERNITE.get());
                         output.accept(ModItems.RAW_EMBERNITE.get());
+
+                        output.accept(ModItems.CHISEL.get());
+                        output.accept(ModItems.SMELT_TORCH.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> PERFECTIVE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("perfective_blocks_tabs",
