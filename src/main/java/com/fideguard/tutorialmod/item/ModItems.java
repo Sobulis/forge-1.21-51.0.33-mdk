@@ -25,6 +25,9 @@ public class ModItems {
     public static final RegistryObject<Item> EMBERNITE = ITEMS.register("embernite",() -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> RAW_EMBERNITE = ITEMS.register("raw_embernite", () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> ZEPHRYTE_NUGGET = ITEMS.register("zephryte_nugget",() -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> BOUNCE_BALL = ITEMS.register("bounce_ball", () -> new Item(new Item.Properties()));
+
     public static final RegistryObject<Item> CHISEL = ITEMS.register("chisel", () -> new ChiselItem(new Item.Properties().durability(32)));
     public static final RegistryObject<Item> SMELT_TORCH = ITEMS.register("smelt_torch", () -> new SmeltItem(new Item.Properties().durability(16)));
 

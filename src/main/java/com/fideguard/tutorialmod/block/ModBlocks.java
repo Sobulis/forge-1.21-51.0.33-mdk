@@ -1,6 +1,8 @@
 package com.fideguard.tutorialmod.block;
 
 import com.fideguard.tutorialmod.TutorialMod;
+import com.fideguard.tutorialmod.block.custom.BounceBlock;
+import com.fideguard.tutorialmod.block.custom.MagicBlock;
 import com.fideguard.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -62,6 +64,12 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> EMBERNITE_DEEPSLATE_ORE = registerBlock("embernite_deepslate_ore",() -> new DropExperienceBlock(UniformInt.of(3,6),BlockBehaviour.Properties.of()
             .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block", () -> new MagicBlock(BlockBehaviour.Properties.of()
+            .strength(2f).requiresCorrectToolForDrops().sound(SoundType.SCULK)));
+
+    public static final RegistryObject<Block> BOUNCE_BLOCK = registerBlock("bounce_block", () -> new BounceBlock(BlockBehaviour.Properties.of()
+            .strength(2f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
 
 
 

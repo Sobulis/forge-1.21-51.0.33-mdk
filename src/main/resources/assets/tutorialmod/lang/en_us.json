@@ -24,5 +24,10 @@
   "creativetab.tutorialmod.perfective_blocks": "Perfective Blocks",
 
   "item.tutorialmod.chisel": "Chisel",
-  "item.tutorialmod.smelt_torch": "Smelt Torch"
+  "item.tutorialmod.smelt_torch": "Smelt Torch",
+
+  "block.tutorialmod.magic_block": "Magic Block",
+  "block.tutorialmod.bounce_block": "Bounce Block",
+  "item.tutorialmod.zephryte_nugget": "Zephryte Nugget",
+  "item.tutorialmod.bounce_ball": "Bounceball"
 }

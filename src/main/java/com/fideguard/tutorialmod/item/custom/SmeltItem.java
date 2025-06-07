@@ -55,7 +55,7 @@ public class SmeltItem extends Item {
         if(SMELT_MAP.containsKey(clickedBlock)){
             if(!level.isClientSide()){
                 ServerLevel serverLevel = (ServerLevel) level;
-                ServerPlayer player = (ServerPlayer) pContext.getPlayer();
+
 
                 serverLevel.removeBlock(pContext.getClickedPos(),false);
 

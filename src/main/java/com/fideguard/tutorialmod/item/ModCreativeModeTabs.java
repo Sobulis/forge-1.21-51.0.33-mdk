@@ -26,8 +26,12 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.EMBERNITE.get());
                         output.accept(ModItems.RAW_EMBERNITE.get());
 
+                        output.accept(ModItems.ZEPHRYTE_NUGGET.get());
+
                         output.accept(ModItems.CHISEL.get());
                         output.accept(ModItems.SMELT_TORCH.get());
+
+                        output.accept(ModItems.BOUNCE_BALL.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> PERFECTIVE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("perfective_blocks_tabs",
@@ -49,6 +53,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.EMBERNITE_DEEPSLATE_ORE.get());
                         output.accept(ModBlocks.ZEPHRYTE_ORE.get());
                         output.accept(ModBlocks.ZEPHRYTE_DEEPSLATE_ORE.get());
+
+                        output.accept(ModBlocks.MAGIC_BLOCK.get());
+                        output.accept(ModBlocks.BOUNCE_BLOCK.get());
 
                     }).build());
 
