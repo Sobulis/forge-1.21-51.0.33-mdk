@@ -32,6 +32,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SMELT_TORCH.get());
 
                         output.accept(ModItems.BOUNCE_BALL.get());
+
+                        output.accept(ModItems.KOHLRABI.get());
+                        output.accept(ModItems.GRAPE.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> PERFECTIVE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("perfective_blocks_tabs",

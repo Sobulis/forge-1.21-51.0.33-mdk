@@ -29,5 +29,8 @@
   "block.tutorialmod.magic_block": "Magic Block",
   "block.tutorialmod.bounce_block": "Bounce Block",
   "item.tutorialmod.zephryte_nugget": "Zephryte Nugget",
-  "item.tutorialmod.bounce_ball": "Bounceball"
+  "item.tutorialmod.bounce_ball": "Bounceball",
+
+  "item.tutorialmod.kohlrabi": "Kohlrabi",
+  "item.tutorialmod.grape": "Grape"
 }
