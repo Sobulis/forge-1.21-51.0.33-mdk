@@ -35,5 +35,14 @@
   "item.tutorialmod.grape": "Grape",
 
   "item.tutorialmod.aurora_ashes": "Aurora Ashes",
-  "item.tutorialmod.charred_stick": "Charred Stick"
+  "item.tutorialmod.charred_stick": "Charred Stick",
+
+  "tooltip.tutorialmod.magic_block.tooltip": "This Block is quite §5MAGICAL§r",
+  "tooltip.tutorialmod.chisel.shift_down" : "This item changes certain §2Blocks§r",
+  "tooltip.tutorialmod.chisel": "Press §eShift§r for more Information",
+  "tooltip.tutorialmod.kohlrabi": "This tastes GREAT!",
+  "tooltip.tutorialmod.bounce_block": "This Block is quite §6BOUNCY§r",
+  "tooltip.tutorialmod.smelt_torch.shift_down": "This item smelts §7Ores§r",
+  "tooltip.tutorialmod.smelt_torch": "Press §eShift§r for more Information",
+  "tooltip.tutorialmod.grape": "CAREFUL, don't take too much!"
 }

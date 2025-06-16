@@ -1,15 +1,21 @@
 package com.fideguard.tutorialmod.block.custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
+
+import java.util.List;
 
 public class BounceBlock extends Block {
     public BounceBlock(Properties properties) {
@@ -55,5 +61,12 @@ public class BounceBlock extends Block {
             living.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED,60, 3));
         }
         super.stepOn(pLevel, pPos, pState, pEntity);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack pStack, Item.TooltipContext pContext, List<Component> pTooltipComponents, TooltipFlag pTooltipFlag) {
+        pTooltipComponents.add(Component.translatable("tooltip.tutorialmod.bounce_block"));
+
+        super.appendHoverText(pStack, pContext, pTooltipComponents, pTooltipFlag);
     }
 }
