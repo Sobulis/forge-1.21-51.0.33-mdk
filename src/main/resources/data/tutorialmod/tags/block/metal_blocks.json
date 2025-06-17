@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:iron_block",
+    "tutorialmod:alexandrite_block",
+    "tutorialmod:embernite_block",
+    "tutorialmod:zephryte_block",
+    "minecraft:gold_block",
+    "minecraft:copper_block",
+    "minecraft:raw_copper_block",
+    "minecraft:raw_iron_block",
+    "minecraft:raw_gold_block",
+    "tutorialmod:raw_alexandrite_block",
+    "tutorialmod:raw_zephryte_block",
+    "tutorialmod:raw_embernite_block"
+  ]
+}
