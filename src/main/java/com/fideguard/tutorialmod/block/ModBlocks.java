@@ -70,6 +70,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> BOUNCE_BLOCK = registerBlock("bounce_block", () -> new BounceBlock(BlockBehaviour.Properties.of()
             .strength(2f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
+    //can add noLootTable here to delete the lootTable error when running Data, and to delete the lootBox of the object
 
 
 
