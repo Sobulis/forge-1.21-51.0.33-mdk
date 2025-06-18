@@ -44,5 +44,18 @@
   "tooltip.tutorialmod.bounce_block": "This Block is quite §6BOUNCY§r",
   "tooltip.tutorialmod.smelt_torch.shift_down": "This item smelts §7Ores§r",
   "tooltip.tutorialmod.smelt_torch": "Press §eShift§r for more Information",
-  "tooltip.tutorialmod.grape": "CAREFUL, don't take too much!"
+  "tooltip.tutorialmod.grape": "CAREFUL, don't take too much!",
+
+  "block.tutorialmod.alexandrite_stairs": "Alexandrite Stairs",
+  "block.tutorialmod.alexandrite_slab": "Alexandrite Slab",
+
+  "block.tutorialmod.alexandrite_button": "Alexandrite Button",
+  "block.tutorialmod.alexandrite_pressure_plate": "Alexandrite Pressure Plate",
+
+  "block.tutorialmod.alexandrite_fence": "Alexandrite Fence",
+  "block.tutorialmod.alexandrite_fence_gate": "Alexandrite Fence Gate",
+  "block.tutorialmod.alexandrite_wall": "Alexandrite Wall",
+
+  "block.tutorialmod.alexandrite_door": "Alexandrite Door",
+  "block.tutorialmod.alexandrite_trapdoor": "Alexandrite Trapdoor"
 }
