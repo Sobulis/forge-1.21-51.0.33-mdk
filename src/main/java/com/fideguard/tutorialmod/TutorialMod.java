@@ -1,6 +1,7 @@
 package com.fideguard.tutorialmod;
 
 import com.fideguard.tutorialmod.block.ModBlocks;
+import com.fideguard.tutorialmod.component.ModDataComponentTypes;
 import com.fideguard.tutorialmod.item.ModCreativeModeTabs;
 import com.fideguard.tutorialmod.item.ModItems;
 import com.mojang.logging.LogUtils;
@@ -41,6 +42,8 @@ public class TutorialMod {
         //Call the items and blocks
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+
+        ModDataComponentTypes.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

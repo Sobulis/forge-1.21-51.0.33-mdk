@@ -1,6 +1,7 @@
 package com.fideguard.tutorialmod.item.custom;
 
 import com.fideguard.tutorialmod.block.ModBlocks;
+import com.fideguard.tutorialmod.component.ModDataComponentTypes;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.network.chat.Component;
@@ -48,6 +49,8 @@ public class ChiselItem extends Item {
                         item -> pContext.getPlayer().onEquippedItemBroken(item, EquipmentSlot.MAINHAND));
 
                 level.playSound(null, pContext.getClickedPos(), SoundEvents.GRINDSTONE_USE, SoundSource.BLOCKS);
+
+                pContext.getItemInHand().set(ModDataComponentTypes.COORDINATES.get(),pContext.getClickedPos());
             }
         }
 
@@ -60,6 +63,10 @@ public class ChiselItem extends Item {
             pTooltipComponents.add(Component.translatable("tooltip.tutorialmod.chisel.shift_down")); //If you want to add a new line, have to add a new componenet to the list
         } else {
             pTooltipComponents.add(Component.translatable("tooltip.tutorialmod.chisel"));
+        }
+
+        if(pStack.get(ModDataComponentTypes.COORDINATES.get()) != null){
+            pTooltipComponents.add(Component.literal("Last Block changed at: " + pStack.get(ModDataComponentTypes.COORDINATES.get())));
         }
 
 
