@@ -2,9 +2,13 @@ package com.fideguard.tutorialmod.datagen;
 
 import com.fideguard.tutorialmod.TutorialMod;
 import com.fideguard.tutorialmod.block.ModBlocks;
+import com.fideguard.tutorialmod.block.custom.AlexandriteLampBlock;
+import com.fideguard.tutorialmod.item.ModItems;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -53,7 +57,38 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.ALEXANDRITE_FENCE_GATE);
         blockItem(ModBlocks.ALEXANDRITE_TRAPDOOR, "_bottom");
 
+        customLamp();
+        generateLamp(ModBlocks.EMBERNITE_LAMP, "embernite_lamp");
+
     }
+    private void customLamp() {
+        getVariantBuilder(ModBlocks.ALEXADNRITE_LAMP.get()).forAllStates(state -> {
+            if(state.getValue(AlexandriteLampBlock.CLICKED)) {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("alexandrite_lamp_on",
+                        ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + "alexandrite_lamp_on")))};
+            } else {
+                return new ConfiguredModel[]{new ConfiguredModel(models().cubeAll("alexandrite_lamp_off",
+                        ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + "alexandrite_lamp_off")))};
+            }
+        });
+        simpleBlockItem(ModBlocks.ALEXADNRITE_LAMP.get(), models().cubeAll("alexandrite_lamp_on",
+                ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "block/" + "alexandrite_lamp_on")));
+    }
+    private void generateLamp(RegistryObject<Block> lampBlock, String baseName) {
+        getVariantBuilder(lampBlock.get()).forAllStates(state -> {
+            String texture = state.getValue(AlexandriteLampBlock.CLICKED)
+                    ? baseName + "_on"
+                    : baseName + "_off";
+            return new ConfiguredModel[]{
+                    new ConfiguredModel(models().cubeAll(texture,
+                            modLoc("block/" + texture)))
+            };
+        });
+
+        simpleBlockItem(lampBlock.get(),
+                models().cubeAll(baseName + "_on", modLoc("block/" + baseName + "_on")));
+    }
+
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

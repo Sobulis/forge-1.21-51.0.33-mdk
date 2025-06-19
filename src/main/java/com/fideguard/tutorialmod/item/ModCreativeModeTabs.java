@@ -73,6 +73,9 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.ALEXANDRITE_PRESSURE_PLATE.get());
                         output.accept(ModBlocks.ALEXANDRITE_BUTTON.get());
 
+                        output.accept(ModBlocks.ALEXADNRITE_LAMP.get());
+                        output.accept(ModBlocks.EMBERNITE_LAMP.get());
+
 
                     }).build());
 

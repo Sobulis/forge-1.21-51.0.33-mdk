@@ -66,6 +66,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.ALEXANDRITE_SLAB.get()));
         this.add(ModBlocks.ALEXANDRITE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.ALEXANDRITE_DOOR.get()));
+
+        dropSelf(ModBlocks.ALEXADNRITE_LAMP.get());
+        dropSelf(ModBlocks.EMBERNITE_LAMP.get());
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

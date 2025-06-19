@@ -10,6 +10,8 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
 import java.awt.*;
@@ -139,6 +141,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.ZEPHRYTE_NUGGET.get()), has(ModItems.ZEPHRYTE_NUGGET.get()))
                 .save(pRecipeOutput, TutorialMod.MOD_ID + ":zephryte_from_nugget");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ALEXADNRITE_LAMP.get())
+                .pattern(" G ")
+                .pattern("GMG")
+                .pattern(" L ")
+                .define('G', Items.GLOWSTONE_DUST)
+                .define('M', ModItems.ALEXANDRITE.get())
+                .define('L', Blocks.GLASS)
+                .unlockedBy(getHasName(ModItems.ALEXANDRITE.get()), has(ModItems.ALEXANDRITE.get()))
+                .save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EMBERNITE_LAMP.get())
+                .pattern(" G ")
+                .pattern("GMG")
+                .pattern(" L ")
+                .define('G', Items.GLOWSTONE_DUST)
+                .define('M', ModItems.EMBERNITE.get())
+                .define('L', Blocks.GLASS)
+                .unlockedBy(getHasName(ModItems.EMBERNITE.get()), has(ModItems.EMBERNITE.get()))
+                .save(pRecipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ALEXANDRITE.get(), 9)
                 .requires(ModBlocks.ALEXANDRITE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.ALEXANDRITE_BLOCK.get()), has(ModBlocks.ALEXANDRITE_BLOCK.get())).save(pRecipeOutput);
@@ -205,6 +227,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.ALEXANDRITE.get()), has(ModItems.ALEXANDRITE.get())).save(pRecipeOutput);
         trapdoorBuilder(ModBlocks.ALEXANDRITE_TRAPDOOR.get(), Ingredient.of(ModItems.ALEXANDRITE.get())).group("alexandrite")
                 .unlockedBy(getHasName(ModItems.ALEXANDRITE.get()), has(ModItems.ALEXANDRITE.get())).save(pRecipeOutput);
+
+
 
     }
 

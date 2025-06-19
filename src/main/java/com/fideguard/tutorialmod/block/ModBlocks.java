@@ -1,6 +1,7 @@
 package com.fideguard.tutorialmod.block;
 
 import com.fideguard.tutorialmod.TutorialMod;
+import com.fideguard.tutorialmod.block.custom.AlexandriteLampBlock;
 import com.fideguard.tutorialmod.block.custom.BounceBlock;
 import com.fideguard.tutorialmod.block.custom.MagicBlock;
 import com.fideguard.tutorialmod.item.ModItems;
@@ -95,7 +96,15 @@ public class ModBlocks {
     public static final RegistryObject<DoorBlock> ALEXANDRITE_DOOR = registerBlock("alexandrite_door",
             () -> new DoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion()));
     public static final RegistryObject<TrapDoorBlock> ALEXANDRITE_TRAPDOOR = registerBlock("alexandrite_trapdoor",
-            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion())); //IRON means that they can only be opened with a redstone signal
+            () -> new TrapDoorBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops().noOcclusion())); //IRON means that they can only be opened with a Redstone signal
+
+
+    public static final RegistryObject<Block> ALEXADNRITE_LAMP = registerBlock("alexandrite_lamp",
+            () -> new AlexandriteLampBlock(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.GLASS)
+                    .lightLevel(state -> state.getValue(AlexandriteLampBlock.CLICKED) ? 15 : 0))); //Create a block that sheds light
+    public static final RegistryObject<Block> EMBERNITE_LAMP = registerBlock("embernite_lamp",
+            () -> new AlexandriteLampBlock(BlockBehaviour.Properties.of().strength(3f).sound(SoundType.GLASS)
+                    .lightLevel(state -> state.getValue(AlexandriteLampBlock.CLICKED) ? 15 : 0))); //Create a block that sheds light
 
 
 

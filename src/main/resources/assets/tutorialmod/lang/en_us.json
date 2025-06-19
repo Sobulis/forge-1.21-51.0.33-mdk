@@ -57,5 +57,8 @@
   "block.tutorialmod.alexandrite_wall": "Alexandrite Wall",
 
   "block.tutorialmod.alexandrite_door": "Alexandrite Door",
-  "block.tutorialmod.alexandrite_trapdoor": "Alexandrite Trapdoor"
+  "block.tutorialmod.alexandrite_trapdoor": "Alexandrite Trapdoor",
+
+  "block.tutorialmod.alexandrite_lamp": "Alexandrite Lamp",
+  "block.tutorialmod.embernite_lamp": "Embernite Lamp"
 }
