@@ -22,6 +22,7 @@
 
   "creativetab.tutorialmod.perfective_items": "Perfective Items",
   "creativetab.tutorialmod.perfective_blocks": "Perfective Blocks",
+  "creativetab.tutorialmod.perfective_tools": "Perfective Tools",
 
   "item.tutorialmod.chisel": "Chisel",
   "item.tutorialmod.smelt_torch": "Smelt Torch",
@@ -60,5 +61,11 @@
   "block.tutorialmod.alexandrite_trapdoor": "Alexandrite Trapdoor",
 
   "block.tutorialmod.alexandrite_lamp": "Alexandrite Lamp",
-  "block.tutorialmod.embernite_lamp": "Embernite Lamp"
+  "block.tutorialmod.embernite_lamp": "Embernite Lamp",
+
+  "item.tutorialmod.alexandrite_sword": "Alexandrite Sword",
+  "item.tutorialmod.alexandrite_pickaxe": "Alexandrite Pickaxe",
+  "item.tutorialmod.alexandrite_shovel": "Alexandrite Shovel",
+  "item.tutorialmod.alexandrite_axe": "Alexandrite Axe",
+  "item.tutorialmod.alexandrite_hoe": "Alexandrite Hoe"
 }

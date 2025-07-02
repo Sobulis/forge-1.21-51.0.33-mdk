@@ -79,6 +79,21 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> PERFECTIVE_TOOLS_TAB = CREATIVE_MODE_TABS.register("perfective_tools_tabs",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.ALEXANDRITE_SWORD.get()))
+                    .withTabsBefore(PERFECTIVE_BLOCKS_TAB.getId()) //Define tabs that should come before this tab. This tab will be placed after the tabs.
+                    .title(Component.translatable("creativetab.tutorialmod.perfective_tools"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.ALEXANDRITE_SWORD.get());
+                        output.accept(ModItems.ALEXANDRITE_PICKAXE.get());
+                        output.accept(ModItems.ALEXANDRITE_AXE.get());
+                        output.accept(ModItems.ALEXANDRITE_SHOVEL.get());
+                        output.accept(ModItems.ALEXANDRITE_HOE.get());
+
+                    }).build());
+
+
 
 
 

@@ -5,10 +5,7 @@ import com.fideguard.tutorialmod.item.custom.ChiselItem;
 import com.fideguard.tutorialmod.item.custom.FuelItem;
 import com.fideguard.tutorialmod.item.custom.SmeltItem;
 import net.minecraft.network.chat.Component;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.internal.ForgeBindings;
 import net.minecraftforge.registries.DeferredRegister;
@@ -56,6 +53,24 @@ public class ModItems {
 
     public static final RegistryObject<Item> AURORA_ASHES = ITEMS.register("aurora_ashes",() -> new FuelItem(new Item.Properties(), 1800));
     public static final RegistryObject<Item> CHARRED_STICK = ITEMS.register("charred_stick",() -> new FuelItem(new Item.Properties(),800));
+
+
+    public static final RegistryObject<Item> ALEXANDRITE_SWORD = ITEMS.register("alexandrite_sword",
+            () -> new SwordItem(ModToolTiers.ALEXANDRITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(ModToolTiers.ALEXANDRITE, 3, -2.4f))));     //For all swords the attack damage and attack speeds is the same (can be changed) - via ModToolTiers
+    public static final RegistryObject<Item> ALEXANDRITE_PICKAXE = ITEMS.register("alexandrite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.ALEXANDRITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(ModToolTiers.ALEXANDRITE, 1, -2.8f))));
+    public static final RegistryObject<Item> ALEXANDRITE_SHOVEL = ITEMS.register("alexandrite_shovel",
+            () -> new ShovelItem(ModToolTiers.ALEXANDRITE, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(ModToolTiers.ALEXANDRITE, 1.5f, -3.0f))));
+    public static final RegistryObject<Item> ALEXANDRITE_AXE = ITEMS.register("alexandrite_axe",
+            () -> new AxeItem(ModToolTiers.ALEXANDRITE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(ModToolTiers.ALEXANDRITE, 6, -3.2f))));
+    public static final RegistryObject<Item> ALEXANDRITE_HOE = ITEMS.register("alexandrite_hoe",
+            () -> new HoeItem(ModToolTiers.ALEXANDRITE, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(ModToolTiers.ALEXANDRITE, 0, -3.0f))));
+
 
 
 
