@@ -14,7 +14,7 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, TutorialMod.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> PERFECTIVE_ITEMS_TAB = CREATIVE_MODE_TABS.register("perfective_items_tabs",
+    public static final RegistryObject<CreativeModeTab> PERFECTIVE_ITEMS_TAB = CREATIVE_MODE_TABS.register("perfective_items_tab",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.ALEXANDRITE.get()))
                     .title(Component.translatable("creativetab.tutorialmod.perfective_items"))
@@ -40,7 +40,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHARRED_STICK.get());
                     }).build());
 
-    public static final RegistryObject<CreativeModeTab> PERFECTIVE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("perfective_blocks_tabs",
+    public static final RegistryObject<CreativeModeTab> PERFECTIVE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("perfective_blocks_tab",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModBlocks.ALEXANDRITE_BLOCK.get()))
                     .withTabsBefore(PERFECTIVE_ITEMS_TAB.getId()) //Define tabs that should come before this tab. This tab will be placed after the tabs.
@@ -79,7 +79,7 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
-    public static final RegistryObject<CreativeModeTab> PERFECTIVE_TOOLS_TAB = CREATIVE_MODE_TABS.register("perfective_tools_tabs",
+    public static final RegistryObject<CreativeModeTab> PERFECTIVE_TOOLS_TAB = CREATIVE_MODE_TABS.register("perfective_tools_tab",
             () -> CreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.ALEXANDRITE_SWORD.get()))
                     .withTabsBefore(PERFECTIVE_BLOCKS_TAB.getId()) //Define tabs that should come before this tab. This tab will be placed after the tabs.
@@ -93,6 +93,21 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALEXANDRITE_HAMMER.get());
 
                     }).build());
+
+    public static final RegistryObject<CreativeModeTab> PERFECTIVE_ARMOR_TAB = CREATIVE_MODE_TABS.register("perfective_armor_tab",
+            () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.ALEXANDRITE_CHESTPLATE.get()))
+                    .withTabsBefore(PERFECTIVE_TOOLS_TAB.getId()) //Define tabs that should come before this tab. This tab will be placed after the tabs.
+                    .title(Component.translatable("creativetab.tutorialmod.perfective_armor"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.ALEXANDRITE_HELMET.get());
+                        output.accept(ModItems.ALEXANDRITE_CHESTPLATE.get());
+                        output.accept(ModItems.ALEXANDRITE_LEGGINGS.get());
+                        output.accept(ModItems.ALEXANDRITE_BOOTS.get());
+
+                    }).build());
+
+
 
 
 

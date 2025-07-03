@@ -27,6 +27,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.COAL)
                 .add(Items.STICK)
                 .add(Items.COMPASS);
+
         tag(ItemTags.SAPLINGS)
                 .add(Items.OAK_SAPLING)
                 .add(Items.SPRUCE_SAPLING)
@@ -35,5 +36,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.CHERRY_SAPLING)
                 .add(Items.DARK_OAK_SAPLING)
                 .add(Items.JUNGLE_SAPLING);
+        tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.ALEXANDRITE_HELMET.get())
+                .add(ModItems.ALEXANDRITE_CHESTPLATE.get())
+                .add(ModItems.ALEXANDRITE_LEGGINGS.get())
+                .add(ModItems.ALEXANDRITE_BOOTS.get());
     }
 }
