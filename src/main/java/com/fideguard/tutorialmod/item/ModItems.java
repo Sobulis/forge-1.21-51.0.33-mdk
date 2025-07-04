@@ -1,10 +1,7 @@
 package com.fideguard.tutorialmod.item;
 
 import com.fideguard.tutorialmod.TutorialMod;
-import com.fideguard.tutorialmod.item.custom.ChiselItem;
-import com.fideguard.tutorialmod.item.custom.FuelItem;
-import com.fideguard.tutorialmod.item.custom.HammerItem;
-import com.fideguard.tutorialmod.item.custom.SmeltItem;
+import com.fideguard.tutorialmod.item.custom.*;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -78,7 +75,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> ALEXANDRITE_HELMET = ITEMS.register("alexandrite_helmet",
-            () -> new ArmorItem(ModArmorMaterials.ALEXANDRITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+            () -> new ModArmorItem(ModArmorMaterials.ALEXANDRITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,         //Change at least one to be a Mod Armor Material for the Effects to work
                     new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(18))));
     public static final RegistryObject<Item> ALEXANDRITE_CHESTPLATE = ITEMS.register("alexandrite_chestplate",
             () -> new ArmorItem(ModArmorMaterials.ALEXANDRITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
