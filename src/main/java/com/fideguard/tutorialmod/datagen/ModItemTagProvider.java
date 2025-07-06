@@ -36,10 +36,17 @@ public class ModItemTagProvider extends ItemTagsProvider {
                 .add(Items.CHERRY_SAPLING)
                 .add(Items.DARK_OAK_SAPLING)
                 .add(Items.JUNGLE_SAPLING);
+
         tag(ItemTags.TRIMMABLE_ARMOR)
                 .add(ModItems.ALEXANDRITE_HELMET.get())
                 .add(ModItems.ALEXANDRITE_CHESTPLATE.get())
                 .add(ModItems.ALEXANDRITE_LEGGINGS.get())
                 .add(ModItems.ALEXANDRITE_BOOTS.get());
+
+        tag(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.ALEXANDRITE.get());
+
+        tag(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
     }
 }

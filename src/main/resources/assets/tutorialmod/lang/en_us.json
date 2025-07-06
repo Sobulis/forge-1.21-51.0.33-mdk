@@ -47,6 +47,8 @@
   "tooltip.tutorialmod.smelt_torch.shift_down": "This item smelts §7Ores§r",
   "tooltip.tutorialmod.smelt_torch": "Press §eShift§r for more Information",
   "tooltip.tutorialmod.grape": "CAREFUL, don't take too much!",
+  "tooltip.tutorialmod.hammer.shift_down": "Breaks §lBlocks§r in a 3x3 Block §5radius§r",
+  "tooltip.tutorialmod.hammer": "Press §eShift§r for more Information",
 
   "block.tutorialmod.alexandrite_stairs": "Alexandrite Stairs",
   "block.tutorialmod.alexandrite_slab": "Alexandrite Slab",
@@ -77,5 +79,9 @@
   "item.tutorialmod.alexandrite_leggings": "Alexandrite Leggings",
   "item.tutorialmod.alexandrite_boots": "Alexandrite Boots",
 
-  "item.tutorialmod.alexandrite_horse_armor": "Alexandrite Horse Armor"
+  "item.tutorialmod.alexandrite_horse_armor": "Alexandrite Horse Armor",
+
+  "item.tutorialmod.kaupen_armor_trim_smithing_template": "Smithing Template",
+  "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Trim",
+  "trim_material.tutorialmod.alexandrite": "Alexandrite Material"
 }

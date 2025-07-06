@@ -11,6 +11,7 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.UnaryOperator;
 
+//This is a data component for the chisel, for it to save the coordinates of the last changed block
 public class ModDataComponentTypes {
     public static final DeferredRegister<DataComponentType<?>> DATA_COMPONENT_TYPES =
             DeferredRegister.create(Registries.DATA_COMPONENT_TYPE, TutorialMod.MOD_ID);
