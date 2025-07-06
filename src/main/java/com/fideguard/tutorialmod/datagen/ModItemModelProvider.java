@@ -50,7 +50,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_EMBERNITE.get());
         basicItem(ModItems.ZEPHRYTE_NUGGET.get());
 
-        basicItem(ModItems.CHISEL.get());
+        // basicItem(ModItems.CHISEL.get());
         basicItem(ModItems.SMELT_TORCH.get());
 
         basicItem(ModItems.KOHLRABI.get());

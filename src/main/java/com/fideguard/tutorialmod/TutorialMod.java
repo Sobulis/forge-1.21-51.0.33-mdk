@@ -4,6 +4,7 @@ import com.fideguard.tutorialmod.block.ModBlocks;
 import com.fideguard.tutorialmod.component.ModDataComponentTypes;
 import com.fideguard.tutorialmod.item.ModCreativeModeTabs;
 import com.fideguard.tutorialmod.item.ModItems;
+import com.fideguard.tutorialmod.util.ModItemProperties;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -87,6 +88,7 @@ public class TutorialMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ModItemProperties.addCustomProperties();
 
         }
     }
