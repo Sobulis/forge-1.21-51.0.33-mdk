@@ -25,4 +25,7 @@ public class ModClientEvents {
             event.setNewFovModifier(fovModifier);
         }
     }
+    //If something implements the IModBusEvent then it's a Bus event
+    //Forge events are events that happen in the game - happen while the game is running
+    //Mod Bus events usually are registration events - called before everything happens
 }
