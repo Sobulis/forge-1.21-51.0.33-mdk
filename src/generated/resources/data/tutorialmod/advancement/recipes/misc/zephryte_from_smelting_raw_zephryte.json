@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_zephryte": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:raw_zephryte"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:zephryte_from_smelting_raw_zephryte"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_zephryte"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:zephryte_from_smelting_raw_zephryte"
+    ]
+  }
+}

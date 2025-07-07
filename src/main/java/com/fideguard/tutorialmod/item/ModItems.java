@@ -96,6 +96,10 @@ public class ModItems {
             () -> SmithingTemplateItem.createArmorTrimTemplate(ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, "kaupen")));
 
 
+    public static final RegistryObject<Item> FIDEGUARD_BOW = ITEMS.register("fideguard_bow",
+            () -> new BowItem(new Item.Properties().durability(500)));
+
+
 
 
 

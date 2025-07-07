@@ -94,6 +94,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.ALEXANDRITE_HOE.get());
                         output.accept(ModItems.ALEXANDRITE_HAMMER.get());
 
+                        output.accept(ModItems.FIDEGUARD_BOW.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> PERFECTIVE_ARMOR_TAB = CREATIVE_MODE_TABS.register("perfective_armor_tab",

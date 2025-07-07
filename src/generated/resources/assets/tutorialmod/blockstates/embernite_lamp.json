@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "tutorialmod:block/embernite_lamp_off"
+    },
+    "clicked=true": {
+      "model": "tutorialmod:block/embernite_lamp_on"
+    }
+  }
+}

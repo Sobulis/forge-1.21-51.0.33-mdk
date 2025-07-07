@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:bounce_ball"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zephryte": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:zephryte_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zephryte"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:bounce_ball"
+    ]
+  }
+}

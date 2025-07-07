@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_embernite": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:embernite"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:embernite_lamp"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_embernite"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:embernite_lamp"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:zephryte"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zephryte_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:zephryte_block"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zephryte_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:zephryte"
+    ]
+  }
+}

@@ -83,5 +83,7 @@
 
   "item.tutorialmod.kaupen_armor_trim_smithing_template": "Smithing Template",
   "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Trim",
-  "trim_material.tutorialmod.alexandrite": "Alexandrite Material"
+  "trim_material.tutorialmod.alexandrite": "Alexandrite Material",
+
+  "item.tutorialmod.fideguard_bow": "Fideguard Bow"
 }

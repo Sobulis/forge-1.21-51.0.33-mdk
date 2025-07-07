@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glowstone_dust"
+    },
+    "L": {
+      "item": "minecraft:glass"
+    },
+    "M": {
+      "item": "tutorialmod:embernite"
+    }
+  },
+  "pattern": [
+    " G ",
+    "GMG",
+    " L "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:embernite_lamp"
+  }
+}

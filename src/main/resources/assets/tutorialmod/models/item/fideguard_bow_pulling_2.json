@@ -1,0 +1,6 @@
+{
+  "parent": "tutorialmod:item/fideguard_bow",
+  "textures": {
+    "layer0": "tutorialmod:item/fideguard_bow_pulling_2"
+  }
+}

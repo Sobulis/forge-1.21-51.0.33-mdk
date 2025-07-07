@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:zephryte_from_blasting_zephryte_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zephryte_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:zephryte_ore"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zephryte_ore"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:zephryte_from_blasting_zephryte_ore"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:aurora_ashes"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zephryte": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:zephryte"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zephryte"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:aurora_ashes"
+    ]
+  }
+}

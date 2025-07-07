@@ -1,0 +1,29 @@
+{
+  "values": [
+    "tutorialmod:alexandrite_block",
+    "tutorialmod:raw_alexandrite_block",
+    "tutorialmod:alexandrite_ore",
+    "tutorialmod:alexandrite_deepslate_ore",
+    "tutorialmod:embernite_block",
+    "tutorialmod:raw_embernite_block",
+    "tutorialmod:embernite_ore",
+    "tutorialmod:embernite_deepslate_ore",
+    "tutorialmod:zephryte_block",
+    "tutorialmod:raw_zephryte_block",
+    "tutorialmod:zephryte_ore",
+    "tutorialmod:zephryte_deepslate_ore",
+    "tutorialmod:magic_block",
+    "tutorialmod:bounce_block",
+    "tutorialmod:alexandrite_stairs",
+    "tutorialmod:alexandrite_slab",
+    "tutorialmod:alexandrite_fence",
+    "tutorialmod:alexandrite_fence_gate",
+    "tutorialmod:alexandrite_wall",
+    "tutorialmod:alexandrite_pressure_plate",
+    "tutorialmod:alexandrite_button",
+    "tutorialmod:alexandrite_door",
+    "tutorialmod:alexandrite_trapdoor",
+    "tutorialmod:alexandrite_lamp",
+    "tutorialmod:embernite_lamp"
+  ]
+}
