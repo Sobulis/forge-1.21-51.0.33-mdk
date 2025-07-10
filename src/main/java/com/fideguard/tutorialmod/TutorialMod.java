@@ -4,6 +4,7 @@ import com.fideguard.tutorialmod.block.ModBlocks;
 import com.fideguard.tutorialmod.component.ModDataComponentTypes;
 import com.fideguard.tutorialmod.item.ModCreativeModeTabs;
 import com.fideguard.tutorialmod.item.ModItems;
+import com.fideguard.tutorialmod.sound.ModSounds;
 import com.fideguard.tutorialmod.util.ModItemProperties;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -45,6 +46,7 @@ public class TutorialMod {
         ModBlocks.register(modEventBus);
 
         ModDataComponentTypes.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

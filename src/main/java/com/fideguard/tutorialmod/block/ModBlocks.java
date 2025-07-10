@@ -5,6 +5,7 @@ import com.fideguard.tutorialmod.block.custom.AlexandriteLampBlock;
 import com.fideguard.tutorialmod.block.custom.BounceBlock;
 import com.fideguard.tutorialmod.block.custom.MagicBlock;
 import com.fideguard.tutorialmod.item.ModItems;
+import com.fideguard.tutorialmod.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -67,7 +68,7 @@ public class ModBlocks {
             .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
 
     public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block", () -> new MagicBlock(BlockBehaviour.Properties.of()
-            .strength(2f).requiresCorrectToolForDrops().sound(SoundType.SCULK)));
+            .strength(2f).requiresCorrectToolForDrops().sound(ModSounds.MAGIC_BLOCK_SOUNDS)));
 
     public static final RegistryObject<Block> BOUNCE_BLOCK = registerBlock("bounce_block", () -> new BounceBlock(BlockBehaviour.Properties.of()
             .strength(2f).requiresCorrectToolForDrops().sound(SoundType.SLIME_BLOCK)));
