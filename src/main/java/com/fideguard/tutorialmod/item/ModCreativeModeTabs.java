@@ -40,6 +40,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.CHARRED_STICK.get());
 
                         output.accept(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
+                        output.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> PERFECTIVE_BLOCKS_TAB = CREATIVE_MODE_TABS.register("perfective_blocks_tab",

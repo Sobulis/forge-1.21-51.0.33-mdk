@@ -85,5 +85,8 @@
   "trim_pattern.tutorialmod.kaupen": "Kaupen Armor Trim",
   "trim_material.tutorialmod.alexandrite": "Alexandrite Material",
 
-  "item.tutorialmod.fideguard_bow": "Fideguard Bow"
+  "item.tutorialmod.fideguard_bow": "Fideguard Bow",
+
+  "item.tutorialmod.bar_brawl_music_disc": "§bMusic Disc§r",
+  "item.tutorialmod.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)"
 }
