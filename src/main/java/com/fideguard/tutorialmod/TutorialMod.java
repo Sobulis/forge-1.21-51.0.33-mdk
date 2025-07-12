@@ -2,6 +2,7 @@ package com.fideguard.tutorialmod;
 
 import com.fideguard.tutorialmod.block.ModBlocks;
 import com.fideguard.tutorialmod.component.ModDataComponentTypes;
+import com.fideguard.tutorialmod.effect.ModEffects;
 import com.fideguard.tutorialmod.item.ModCreativeModeTabs;
 import com.fideguard.tutorialmod.item.ModItems;
 import com.fideguard.tutorialmod.sound.ModSounds;
@@ -47,6 +48,8 @@ public class TutorialMod {
 
         ModDataComponentTypes.register(modEventBus);
         ModSounds.register(modEventBus);
+
+        ModEffects.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

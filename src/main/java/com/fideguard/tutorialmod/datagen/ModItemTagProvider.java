@@ -48,5 +48,7 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.KAUPEN_SMITHING_TEMPLATE.get());
+
+
     }
 }
